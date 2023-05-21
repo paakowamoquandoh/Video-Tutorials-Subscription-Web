@@ -52,14 +52,6 @@
             </div>
 
             <div class="list list-right">
-                <button class="btn place-items-center" id="theme-toggle-btn">
-                    <i class="ri-sun-line sun-icon"></i>
-                    <i class="ri-moon-line moon-icon"></i>
-                </button>
-
-                <button class="btn place-items-center" id="search-icon">
-                    <i class="ri-search-line"></i>
-                </button>
 
                 <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
                     <i class="ri-menu-3-line open-menu-icon"></i>
@@ -76,26 +68,73 @@
 
     </header>
 
-    <!-- Search -->
-    <div class="search-form-container container" id="search-form-container">
-
-        <div class="form-container-inner">
-
-            <form action="" class="form">
-                <input class="form-input" type="text" placeholder="What are you looking for?">
-                <button class="btn form-btn" type="submit">
-                    <i class="ri-search-line"></i>
-                </button>
-            </form>
-            <span class="form-note">Or press ESC to close.</span>
-
+     <!-- Slider main container -->
+     <div class="newMusicSwiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="newMusicBox">
+              <img src="./img/accessories/1.jpg" alt="" />
+              <div class="newMusicText">
+                <h2 class="musicTitle">Welcome to <i>Kosafrique</i></h2>
+                <span class="genre"
+                  >Your one stock shop for African made Clothing and
+                  Accessories</span
+                >
+                <button class="shopButton">Shop now<i>!</i></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="newMusicBox">
+              <img src="./img/pillow/p2.webp" alt="" />
+              <div class="newMusicText1">
+                <h2 class="musicTitle">Checkout our Shops</h2>
+                <span class="genre">African made pillows in all sizes</span>
+                <p><a href="">Browse products</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="newMusicBox">
+              <img src="./img/clothes/cl8.jpg" alt="" />
+              <div class="newMusicText1 mobile">
+                <h2 class="musicTitle">African print Clothing</h2>
+                <span class="genre"><i>Best pricing value and Quality</i></span>
+                <button class="shopButton">Shop now<i>!</i></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="newMusicBox">
+              <img src="./img/accessories/acc5.jpg" alt="" />
+              <div class="newMusicText1 mobile">
+                <h2 class="musicTitle">Native Designed Accessories</h2>
+                <span class="genre"
+                  >Accessories inspired by the African designs</span
+                >
+                <button class="shopButton">Shop now<i>!</i></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="newMusicBox">
+              <img src="./img/clothes/cl5.jpg" alt="" />
+              <div class="newMusicText1 mobile">
+                <h2 class="musicTitle">African made:</h2>
+                <ul style="margin-top: -1rem">
+                  <li>Lingerie and Sportswear</li>
+                </ul>
+                <p><a href="">Browse products</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="swipeButtons">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+               
+            </div> -->
         </div>
-
-        <button class="btn form-close-btn place-items-center" id="form-close-btn">
-            <i class="ri-close-line"></i>
-        </button>
-
-    </div>
+      </div>
 
     <!-- Featured articles -->
     <section class="featured-articles section section-header-offset">
@@ -679,5 +718,53 @@
     <script src="./js/swiper-bundle.min.js"></script>
     <!-- Custom script -->
     <script src="./js/main.js"></script>
+    <script type="module">
+        import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js";
+    
+        const swiper = new Swiper(".swiper", {
+          // Optional parameters
+          slidesPreview: 1,
+          spaceBetween: 10,
+          autoplay: {
+            delay: 7000,
+            disableOnInteraction: false,
+          },
+    
+          // If we need pagination
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+    
+          // Navigation arrows
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+    
+          breakpoints: {
+            280: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            510: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            758: {
+              slidesPerView: 1,
+              spaceBetween: 15,
+            },
+            900: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
+          },
+        });
+      </script>
 </body>
 </html>
