@@ -6,16 +6,16 @@
   --light-color: rgb(201, 126, 125);
   --light-color-alt: #fdfdfd;
   --primary-background-color: #070606;
-  --secondary-background-color: #1c1e24;
+  --secondary-background-color: #17191d;
   --hover-light-color: var(--light-color);
   --hover-dark-color: var(--primary-background-color);
   --gradient-color: linear-gradient(
     115deg,
-    #d04194,
-    #fa48fa,
-    #c850c0,
-    #fafe12,
-    #c8bc50
+    #444042,
+    #413e41,
+    #575356,
+    #4b4b49,
+    #424240
   );
   --transparent-light-color: rgba(255, 255, 255, 0.05);
   --transparent-dark-color: rgba(0, 0, 0, 0.75);
@@ -119,6 +119,18 @@ body.light-theme {
   left: 0;
   width: 100%;
   z-index: 999;
+}
+
+.logoBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoBox img {
+  height: 60px;
+  width: auto;
 }
 
 .navbar {
