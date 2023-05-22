@@ -536,6 +536,10 @@ body.light-theme {
   margin-bottom: 1rem;
 }
 
+.article-data-container .ad {
+  font-size: x-large;
+}
+
 .article-data-spacer {
   width: 0.5rem;
   height: 0.5rem;
