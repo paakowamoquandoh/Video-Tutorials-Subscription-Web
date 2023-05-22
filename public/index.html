@@ -53,10 +53,22 @@
                 </a>
                 <ion-icon size="large" name="cart-outline"></ion-icon>
 
-                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                <div class="icon-box place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                  </div>
+        
+                  <div style="display: none;" class="icon-box place-items-center" id="search-icon">
+                    <i class="ri-search-line"></i>
+                  </div>
+        
+                  <div
+                    class="icon-box place-items-center screen-lg-hidden menu-toggle-icon"
+                    id="menu-toggle-icon"
+                  >
                     <i class="ri-menu-3-line open-menu-icon"></i>
                     <i class="ri-close-line close-menu-icon"></i>
-                </button>
+                  </div>
                 
             </div>
 
@@ -64,12 +76,35 @@
 
     </header>
 
+      <!-- Search -->
+      <div class="search-form-container container" id="search-form-container">
+        <div class="form-container">
+          <form action="" class="form">
+            <input
+              class="form-input"
+              type="text"
+              placeholder="What are you looking for?"
+            />
+            <button class="btn form-btn icon-box" type="submit">
+              <i class="ri-search-line"></i>
+            </button>
+          </form>
+          <span class="form-note">Or press ESC to close.</span>
+        </div>
+        <div
+          class="btn form-close-btn icon-box place-items-center"
+          id="form-close-btn"
+        >
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
      <!-- Slider main container -->
      <div class="newMusicSwiper swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="newMusicBox">
-              <img src="./media/hair/h8.jpg" alt="" />
+              <img src="./media/hair/h9.jpg" alt="" />
               <div class="newMusicText">
                 <h1 class="musicTitle">Welcome to <i>itMustBeGinger</i></h1>
               </div>
@@ -87,7 +122,7 @@
           </div>
           <div class="swiper-slide">
             <div class="newMusicBox">
-              <img src="./media/hair/h14.jpg" alt="" />
+              <img src="./media/hair/h4.jpg" alt="" />
               <div class="newMusicText1 mobile">
                 <h2 class="musicTitle">Premium Membership</h2>
                 <span class="genre"><i> Access to Online Academy</i></span>
@@ -111,59 +146,59 @@
             <div class="featured-content d-grid">
 
                 <div class="headline-banner">
-                    <h3 class="headline fancy-border">
-                        <span class="place-items-center">Breaking news</span>
-                    </h3>
-                    <span class="headline-description">Apple announces a new partnership...</span>
+                    
+                    <button type="button" class="headline fancy-border">
+                        <span class="place-items-center">Choose your plan</span>
+                    </button>
+                    <span class="headline-description">Our goal is to teach you everything you need to know to take your passion to the next level and make a worthwhile living doing it</span>
                 </div>
 
                 <a href="./post.html" class="article featured-article featured-article-1">
-                    <img src="./images/featured/featured-1.jpg" alt="" class="article-image">
-                    <span class="article-category">Technology</span>
+                    <img src="./media/hair/tamara-bellis-ZvPoZtY-0ng-unsplash.jpg" alt="" class="article-image">
+                    <span class="article-category">Watch Now</span>
 
                     <div class="article-data-container">
 
                         <div class="article-data">
-                            <span>Dec 5th 2021</span>
+                            
                             <span class="article-data-spacer"></span>
-                            <span>8 Min read</span>
+                            <span>8 Min watch</span>
                         </div>
 
-                        <h3 class="title article-title">Is VR the future?</h3>
+                        <h3 class="title article-title">The Boat Bun Updo</h3>
 
                     </div>
                 </a>
 
                 <a href="./post.html" class="article featured-article featured-article-2">
-                    <img src="./images/featured/featured-2.jpg" alt="" class="article-image">
-                    <span class="article-category">Food</span>
+                    <img src="./media/hair/h17.jpg" alt="" class="article-image">
+                    <span class="article-category">Watch Now</span>
 
                     <div class="article-data-container">
 
                         <div class="article-data">
-                            <span>Dec 6th 2021</span>
+                            
                             <span class="article-data-spacer"></span>
-                            <span>4 Min read</span>
+                            <span>4 Min watch</span>
                         </div>
 
-                        <h3 class="title article-title">Fine dining 101</h3>
+                        <h3 class="title article-title">The Intertwist Updo</h3>
 
                     </div>
                 </a>
 
                 <a href="./post.html" class="article featured-article featured-article-3">
-                    <img src="./images/featured/featured-3.jpg" alt="" class="article-image">
-                    <span class="article-category">Health</span>
+                    <img src="./media/hair/h15.jpg" alt="" class="article-image">
+                    <span class="article-category">Watch Now</span>
 
                     <div class="article-data-container">
 
                         <div class="article-data">
-                            <span>Dec 5th 2021</span>
                             <span class="article-data-spacer"></span>
-                            <span>5 Min read</span>
+                            <span>5 Min watch</span>
                         </div>
 
-                        <h3 class="title article-title">Natural fat burner</h3>  
+                        <h3 class="title article-title">The Cascade Updo</h3>  
 
                     </div>
                 </a>
@@ -172,23 +207,25 @@
             
             <div class="sidebar d-grid">
 
-                <h3 class="title featured-content-title">Trending news</h3>
+                <h3 class="title featured-content-title">Brand New</h3>
+                <p>Check out our latest classes where you will learn some of the most sought after hairstyles worldwide.</p>
+                <h5 style="color: crimson;">Learn anytime, anywhere, at your own pace</h5>
 
                 <a href="#" class="trending-news-box">
                     <div class="trending-news-img-box">
                         <span class="trending-number place-items-center">01</span>
-                        <img src="./images/trending/trending_1.jpg" alt="" class="article-image">
+                        <img src="./media/hair/h7.jpg" alt="" class="article-image">
                     </div>
 
                     <div class="trending-news-data">
 
                         <div class="article-data">
-                            <span>23 Dec 2021</span>
+                            <span>Watch Now</span>
                             <span class="article-data-spacer"></span>
-                            <span>3 Min read</span>
+                            <span>3 Min watch</span>
                         </div>
 
-                        <h3 class="title article-title">Sample article title</h3>
+                        <h3 class="title article-title">The Anna Updo</h3>
 
                     </div>
                 </a>
@@ -196,18 +233,18 @@
                 <a href="#" class="trending-news-box">
                     <div class="trending-news-img-box">
                         <span class="trending-number place-items-center">02</span>
-                        <img src="./images/trending/trending_2.jpg" alt="" class="article-image">
+                        <img src="./media/hair/paul-siewert-dnpa8k6TGRE-unsplash.jpg" alt="" class="article-image">
                     </div>
 
                     <div class="trending-news-data">
 
                         <div class="article-data">
-                            <span>23 Dec 2021</span>
+                            <span>Watch Now</span>
                             <span class="article-data-spacer"></span>
-                            <span>3 Min read</span>
+                            <span>3 Min watch</span>
                         </div>
 
-                        <h3 class="title article-title">Sample article title</h3>
+                        <h3 class="title article-title">The ‘Lily bun’ Updo</h3>
 
                     </div>
                 </a>
@@ -215,23 +252,23 @@
                 <a href="#" class="trending-news-box">
                     <div class="trending-news-img-box">
                         <span class="trending-number place-items-center">03</span>
-                        <img src="./images/trending/trending_3.jpg" alt="" class="article-image">
+                        <img src="./media/hair/istockphoto-1411162306-1024x1024.jpg" alt="" class="article-image">
                     </div>
 
                     <div class="trending-news-data">
 
                         <div class="article-data">
-                            <span>23 Dec 2021</span>
+                            <span>Watch Now</span>
                             <span class="article-data-spacer"></span>
-                            <span>3 Min read</span>
+                            <span>3 Min watch</span>
                         </div>
 
-                        <h3 class="title article-title">Sample article title</h3>
+                        <h3 class="title article-title">The ‘Swiss Stripe’ Updo</h3>
 
                     </div>
                 </a>
 
-                <a href="#" class="trending-news-box">
+                <!-- <a href="#" class="trending-news-box">
                     <div class="trending-news-img-box">
                         <span class="trending-number place-items-center">04</span>
                         <img src="./images/trending/trending_4.jpg" alt="" class="article-image">
@@ -240,35 +277,15 @@
                     <div class="trending-news-data">
 
                         <div class="article-data">
-                            <span>23 Dec 2021</span>
+                            <span>Watch Now</span>
                             <span class="article-data-spacer"></span>
-                            <span>3 Min read</span>
+                            <span>3 Min watch</span>
                         </div>
 
                         <h3 class="title article-title">Sample article title</h3>
 
                     </div>
-                </a>
-
-                <a href="#" class="trending-news-box">
-                    <div class="trending-news-img-box">
-                        <span class="trending-number place-items-center">05</span>
-                        <img src="./images/trending/trending_5.jpg" alt="" class="article-image">
-                    </div>
-
-                    <div class="trending-news-data">
-
-                        <div class="article-data">
-                            <span>23 Dec 2021</span>
-                            <span class="article-data-spacer"></span>
-                            <span>3 Min read</span>
-                        </div>
-
-                        <h3 class="title article-title">Sample article title</h3>
-
-                    </div>
-                </a>
-
+                </a> -->
             </div>
 
         </div>
