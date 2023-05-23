@@ -338,7 +338,7 @@ body.light-theme {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: var(--light-color);
+  color: crimson;
 }
 
 .shopButton {
@@ -510,7 +510,9 @@ body.light-theme {
   text-transform: uppercase;
   z-index: 10;
 }
-
+.genre:hover {
+  color: teal;
+}
 .article-data-container {
   width: 100%;
   position: absolute;
