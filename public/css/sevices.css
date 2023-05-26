@@ -7,7 +7,7 @@
     --color-brand-accent-h: 16;
     --color-brand-accent-s: 96%;
     --color-brand-accent-l: 61%;
-    --color-brand-accent-bg: #ffebeb;
+    --color-brand-accent-bg: #ffc2c2;
     --lightService: #fff;
     --ratio: 1.4;
     --s-6: calc(var(--s-5) / var(--ratio));
@@ -134,7 +134,7 @@ ul li {
     background-attachment: fixed;
     }
 .c-section span:after {
-    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae accusamus eaque necessitatibus modi facilis aspernatur ut natus saepe!";
+    content: "Our goal is to teach you everything you need to know to take your passion to the next level and make a worthwhile living doing it";
     display: block;
     font-size: 1.4rem;
     position: absolute;
@@ -202,6 +202,8 @@ ul li {
     position: relative;
     z-index: 1;
 }
+
+
 @media (min-width: 40.625em) {
     .c-services__item {
         transform: translateY(-85px);
@@ -299,10 +301,17 @@ ul li {
     background-repeat: no-repeat;
     background-position: center;
     }
-.c-services__item p {
+.c-services__item li , p {
     margin-top: var(--s-1);
     font-weight: 400;
-    color: #706d7e;
+    color: #716f7a;
+}
+
+.c-services__item li {
+    text-transform: capitalize;
+    list-style: outside;
+    font-size: larger;
+   
 }
 .c-services__item:hover {
     background-color: var(--color-brand-accent);
