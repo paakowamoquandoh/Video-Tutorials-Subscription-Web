@@ -3,7 +3,7 @@
 
 /* Custom properties */
 :root {
-  --light-color: rgb(201, 126, 125);
+  --light-color: lightcoral;
   --light-color-alt: #fdfdfd;
   --primary-background-color: #070606;
   --secondary-background-color: #17191d;
@@ -87,6 +87,11 @@ body.light-theme {
   --transparent-light-color: rgba(0, 0, 0, 0.1);
 }
 /* Reusable classes */
+.links{
+  text-decoration: underline;
+  color: blue;
+  font-size: 14px;
+}
 .container {
   max-width: 160rem;
   margin: 0 auto;
@@ -755,32 +760,33 @@ body.light-theme {
   background-color: var(--secondary-background-color);
 }
 
-.footer-container {
-  gap: var(--gap);
-}
-
 .company-data {
   display: flex;
   flex-direction: column;
-  order: 1;
+ justify-content: space-evenly;
+ align-items: center;
 }
 
-.company-description {
-  margin-block: var(--margin-sm);
-  max-width: 75%;
+.footer .logo{
+  margin-bottom: var(--margin-md);
 }
 
 .social-media {
   margin-bottom: var(--margin-md);
 }
 
-.copyright-notice {
-  opacity: 0.8;
+.social-media i, .social-media ion-icon{
+  font-size: 30px;
+  color: green;
 }
 
-.footer-list {
-  flex-direction: column;
-  align-items: flex-start;
+.social-media i:hover, .social-media ion-icon:hover{
+  
+  color: lightcoral;
+}
+
+.copyright-notice {
+  opacity: 0.8;
 }
 
 .footer-title {
