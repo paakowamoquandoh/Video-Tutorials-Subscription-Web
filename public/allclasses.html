@@ -1,246 +1,184 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>itMustBeGinger | Home</title>
     <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./media/icons/nn.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./media/icons/nn.png">
     <!-- Remix icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- Swiper.js styles -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
     <!-- Header -->
     <header class="header" id="header">
-      <nav class="navbar container">
-        <a class="logoBox" href="./index.html">
-          <img src="./media/icons/nn.png" alt="" />
-          <h2 class="logo">itMustBeGinger</h2>
-        </a>
 
-        <div class="menu" id="menu">
-          <ul class="list">
-            <li class="list-item">
-              <a href="./allclasses.html" class="list-link current"
-                >All Classes</a
-              >
-            </li>
-            <li class="list-item">
-              <a href="./membership.html" class="list-link">Membership Plans</a>
-            </li>
-            <li class="list-item">
-              <a href="./contact.html" class="list-link">Contact</a>
-            </li>
-            <li class="list-item screen-lg-hidden">
-              <a href="" class="list-link">My account</a>
-            </li>
-            <li class="list-item screen-lg-hidden">
-              <a href="" class="list-link"
-                ><ion-icon size="large" name="cart-outline"></ion-icon
-              ></a>
-            </li>
-          </ul>
-        </div>
+        <nav class="navbar container">
+            <a class="logoBox" href="./index.html">
+                <img src="./media/icons/nn.png" alt="">
+                <h2 class="logo">itMustBeGinger</h2>
+            </a>
 
-        <div class="list list-right">
-          <a href="#" class="btn sign-up-btn fancy-border screen-sm-hidden">
-            <span>My account</span>
-          </a>
-          <ion-icon size="large" name="cart-outline"></ion-icon>
+            <div class="menu" id="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="./index.html" class="list-link ">Home</a>
+                    </li>
+                    <li class="list-item">
+                      <a href="./allclasses.html" class="list-link current">Products</a>
+                  </li>
+                    <li class="list-item">
+                        <a href="./membership.html" class="list-link">Education/Academy</a>
+                    </li>
 
-          <div class="icon-box place-items-center" id="theme-toggle-btn">
-            <i class="ri-sun-line sun-icon"></i>
-            <i class="ri-moon-line moon-icon"></i>
-          </div>
+                    <li class="list-item">
+                        <a href="./services.html" class="list-link">Services</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="./signin.html" class="list-link">My account</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="" class="list-link"><ion-icon size="large" name="cart-outline"></ion-icon></a>
+                    </li>
+                </ul>
+            </div>
 
-          <div
-            style="display: none"
-            class="icon-box place-items-center"
-            id="search-icon"
-          >
-            <i class="ri-search-line"></i>
-          </div>
+            <div class="list list-right">
+                
+                <a href="" class="btn sign-up-btn fancy-border screen-sm-hidden">
+                    <span>My account</span>
+                </a>
+                <ion-icon size="large" name="cart-outline"></ion-icon>
 
-          <div
-            class="icon-box place-items-center screen-lg-hidden menu-toggle-icon"
-            id="menu-toggle-icon"
-          >
-            <i class="ri-menu-3-line open-menu-icon"></i>
-            <i class="ri-close-line close-menu-icon"></i>
-          </div>
-        </div>
-      </nav>
+                <div class="icon-box place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                  </div>
+        
+                  <div style="display: none;" class="icon-box place-items-center" id="search-icon">
+                    <i class="ri-search-line"></i>
+                  </div>
+        
+                  <div
+                    class="icon-box place-items-center screen-lg-hidden menu-toggle-icon"
+                    id="menu-toggle-icon"
+                  >
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                  </div>
+                
+            </div>
+
+        </nav>
+
     </header>
 
-    <!-- Search -->
-    <div class="search-form-container container" id="search-form-container">
-      <div class="form-container">
-        <form action="" class="form">
-          <input
-            class="form-input"
-            type="text"
-            placeholder="What are you looking for?"
-          />
-          <button class="btn form-btn icon-box" type="submit">
-            <i class="ri-search-line"></i>
-          </button>
-        </form>
-        <span class="form-note">Or press ESC to close.</span>
-      </div>
-      <div
-        class="btn form-close-btn icon-box place-items-center"
-        id="form-close-btn"
-      >
-        <i class="ri-close-line"></i>
-      </div>
-    </div>
-
-    <section class="blog-post section-header-offset">
-      <div class="blog-post-container container">
-        <div class="blog-post-data">
-          <h3 class="title blog-post-title">itMustBeGinger All Classes</h3>
-          <div class="article-data"></div>
-          <img src="./assets/images/featured/featured-1.jpg" alt="" />
-        </div>
-
-        <div class="container">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-            eius possimus hic eligendi distinctio rerum incidunt, esse quasi eum
-            molestiae ducimus ipsam quae, aliquid ullam placeat dolorum nulla
-            vero. Quam? Lorem ipsum dolor sit amet consectetur, adipisicing
-            elit. Vero quod necessitatibus, aspernatur pariatur asperiores earum
-            quas adipisci veritatis quidem facilis! Nihil veniam quaerat nulla
-            possimus, asperiores vero voluptatum placeat. Eveniet!
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="newsletter section">
-      <div class="container">
-        <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
-
-        <div class="form-container-inner">
-          <h6 class="title newsletter-title">Subscribe to itMustBeGinger</h6>
-          <p class="newsletter-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing quaerat
-            dignissimos.
-          </p>
-
+      <!-- Search -->
+      <div class="search-form-container container" id="search-form-container">
+        <div class="form-container">
           <form action="" class="form">
             <input
               class="form-input"
               type="text"
-              placeholder="Enter your email address"
+              placeholder="What are you looking for?"
             />
-            <button class="btn form-btn" type="submit">
-              <i class="ri-mail-send-line"></i>
+            <button class="btn form-btn icon-box" type="submit">
+              <i class="ri-search-line"></i>
             </button>
           </form>
+          <span class="form-note">Or press ESC to close.</span>
+        </div>
+        <div
+          class="btn form-close-btn icon-box place-items-center"
+          id="form-close-btn"
+        >
+          <i class="ri-close-line"></i>
         </div>
       </div>
+
+
+
+    <!-- Newsletter -->
+    <section class="newsletter section">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
+
+            <div class="form-container-inner">
+                <h6 class="title newsletter-title">Subscribe to itMustBeGinger</h6>
+                <p class="newsletter-description">Lorem ipsum dolor sit amet consectetur adipisicing quaerat dignissimos.</p>
+
+                <form action="" class="form">
+                    <input class="form-input" type="text" placeholder="Enter your email address">
+                    <button class="btn form-btn" type="submit">
+                        <i class="ri-mail-send-line"></i>
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
     </section>
 
     <!-- Footer -->
     <footer class="footer section">
-      <div class="footer-container container d-grid">
-        <div class="company-data">
-          <a href="./index.html">
-            <h2 class="logo">itMustBeGinger</h2>
-          </a>
-
-          <ul class="list social-media">
-            <li class="list-item">
-              <a href="#" class="list-link"
-                ><i class="ri-instagram-line"></i
-              ></a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="list-link"
-                ><i class="ri-facebook-circle-line"></i
-              ></a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="list-link"
-                ><i class="ri-pinterest-line"></i
-              ></a>
-            </li>
-          </ul>
-
-          <span class="copyright-notice"
-            >&copy;2021 itMustBeGinger. All rights reserved.</span
-          >
+        <div class="footer-container container">
+          <div class="company-data">
+            <a href="./index.html">
+              <h2 class="logo">itMustBeGinger</h2>
+            </a>
+ 
+            <ul class="list social-media">
+              <li class="list-item">
+                <a target="_blank" href="https://www.instagram.com/it_must_be_ginger/" class="list-link"
+                  ><i class="ri-instagram-fill"></i
+                ></a>
+              </li>
+              <li class="list-item">
+                <a target="_blank" href="https://web.facebook.com/ItmustbeGinger" class="list-link"
+                  ><i class="ri-facebook-circle-fill"></i
+                ></a>
+              </li>
+              <li class="list-item">
+                <a target="_blank" href="https://twitter.com/ginger_makeupGH" class="list-link"><i class="ri-twitter-fill"></i></a>
+              </li>
+              <li class="list-item">
+                <a target="_blank" href="https://www.youtube.com/@WendySomuah" class="list-link"
+                  ><i class="ri-youtube-fill"></i></a>
+              </li>
+              <li class="list-item">
+                <a target="_blank" href="https://www.pinterest.com/wendysomuah/?eq=itmustbe&etslf=7112" class="list-link"
+                  ><i class="ri-pinterest-fill"></i
+                ></a>
+              </li>
+              <li class="list-item">
+                <a target="_blank" href="https://www.tiktok.com/@itmustbeginger" class="list-link"
+                  ><ion-icon name="logo-tiktok"></ion-icon></a>
+              </li>
+              <li class="list-item">
+                <a target="_blank" href="" class="list-link"
+                  ><i class="ri-snapchat-fill"></i></a>
+              </li>
+            </ul>
+  
+            <span class="copyright-notice"
+              >&copy;2023 itMustBeGinger. All rights reserved.</span
+            >
+          </div>        
         </div>
-
-        <div>
-          <h6 class="title footer-title">Categories</h6>
-
-          <ul class="footer-list list">
-            <li class="list-item">
-              <a href="#" class="list-link">Travel</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="list-link">Food</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h6 class="title footer-title">Useful links</h6>
-
-          <ul class="footer-list list">
-            <li class="list-item">
-              <a href="#" class="list-link">Home</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="list-link">Elements</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h6 class="title footer-title">Company</h6>
-
-          <ul class="footer-list list">
-            <li class="list-item">
-              <a href="#" class="list-link">Contact us</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="list-link">F.A.Q</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+      </footer>
 
     <!-- Swiper.js -->
     <script src="./js/swiper-bundle.min.js"></script>
     <!-- Custom script -->
     <script src="./js/main.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
