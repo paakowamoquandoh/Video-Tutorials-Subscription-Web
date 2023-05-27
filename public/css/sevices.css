@@ -54,7 +54,7 @@ body.light-theme {
 }
 
 .c-section{
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 
 
@@ -300,17 +300,18 @@ ul li {
     background-size: 20px 20px;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url("../media/icons/nn.png");
     }
 .c-services__item li , p {
     margin-top: var(--s-1);
-    font-weight: 400;
+    font-weight: 600;
     color: #716f7a;
 }
 
 .c-services__item li {
     text-transform: capitalize;
-    list-style: outside;
-    font-size: larger;
+    list-style: inside;
+    font-size: 18px;
    
 }
 .c-services__item:hover {
