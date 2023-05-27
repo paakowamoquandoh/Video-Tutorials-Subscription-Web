@@ -222,8 +222,8 @@ body.light-theme {
 }
 
 #userBtn:hover{
-  background: var(--secondary-color);
-  color: var(--main-color);
+  background: var(--light-color-alt);
+  color: var(--light-color);
 
 }
 
@@ -231,6 +231,23 @@ body.light-theme {
   opacity: 0;
   pointer-events: none;
 }
+
+.carty{
+  position: relative;
+  padding: 3px 0px 2px -2px;
+}
+
+.cartAmount{
+  font-size: 16px;
+  background-color: var(--light-color);
+  color: var(--light-color-alt);
+  position: absolute;
+  top: -15px;
+  right: -14px;
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+
 
 
 .list {
