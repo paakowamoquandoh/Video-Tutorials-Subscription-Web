@@ -26,33 +26,48 @@
             <div class="menu" id="menu">
                 <ul class="list">
                     <li class="list-item">
-                        <a href="./index.html" class="list-link ">Home</a>
+                        <a href="./allclasses.html" class="list-link">Home</a>
                     </li>
                     <li class="list-item">
-                      <a href="./allclasses.html" class="list-link ">Products</a>
+                      <a href="./allclasses.html" class="list-link">Products</a>
                   </li>
                     <li class="list-item">
-                        <a href="./membership.html" class="list-link ">Education/Academy</a>
+                        <a href="./membership.html" class="list-link current">Education/Academy</a>
                     </li>
 
                     <li class="list-item">
-                        <a href="./services.html" class="list-link current">Services</a>
+                        <a href="./services.html" class="list-link">Services/Booking</a>
                     </li>
-                    <li class="list-item screen-lg-hidden">
-                        <a href="./signin.html" class="list-link">My account</a>
-                    </li>
-                    <li class="list-item screen-lg-hidden">
-                        <a href="" class="list-link"><ion-icon size="large" name="cart-outline"></ion-icon></a>
-                    </li>
+                    <span href="" class="btn sign-up-btn screen-lg-hidden">
+                      <span class="list-link"><i class="ri-user-6-line"></i></span>
+                    </span>
                 </ul>
             </div>
 
             <div class="list list-right">
                 
-                <a href="" class="btn sign-up-btn fancy-border screen-sm-hidden">
-                    <span>My account</span>
-                </a>
-                <ion-icon size="large" name="cart-outline"></ion-icon>
+                <span href="" class="btn sign-up-btn screen-sm-hidden">
+                  <span class="loginArea" id="loginArea">
+                    <span class="list-link userLogo"><i class="ri-user-6-line"></i></span>
+        
+                    <div class="loginPopUp hide">
+                      <p class="accountInfo">
+                        Logged in as, <b><i>name</i></b>
+                      </p>
+                      <button class="btn" id="userBtn">Log out</button>
+                    </div>
+                  </span>
+                  <div class="mobileLogo hide"></div>
+                </span>
+               
+                <span onclick="">
+                  <div class="cartBox">
+                    <div class="carty">
+                      <ion-icon class="shopIcon" size="large" name="cart-outline"></ion-icon>
+                      <div class="cartAmount" id="itemsUpdate">0</div>
+                    </div>
+                  </div>
+                </span>
 
                 <div class="icon-box place-items-center" id="theme-toggle-btn">
                     <i class="ri-sun-line sun-icon"></i>
