@@ -275,6 +275,11 @@ body.light-theme {
     .noshow{
         display: none;
     }
+    
+    .heading h1{
+        font-size: 1.8rem;
+    }
+   
 }
  .button-wrapper svg {
 	 width: 28px;
