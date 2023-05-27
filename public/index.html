@@ -38,8 +38,8 @@
                     <li class="list-item">
                         <a href="./services.html" class="list-link">Services</a>
                     </li>
-                    <li class="list-item screen-lg-hidden">
-                        <a href="./signin.html" class="list-link">My account</a>
+                    <li class="">
+                      
                     </li>
                     <li class="list-item screen-lg-hidden">
                         <a href="" class="list-link"><ion-icon size="large" name="cart-outline"></ion-icon></a>
@@ -49,9 +49,19 @@
 
             <div class="list list-right">
                 
-                <a href="" class="btn sign-up-btn fancy-border screen-sm-hidden">
-                    <span>My account</span>
-                </a>
+                <span href="" class="btn sign-up-btn screen-sm-hidden">
+                  <span class="loginArea" id="loginArea">
+                    <span class="list-link userLogo"><i class="ri-user-6-line"></i></span>
+        
+                    <div class="loginPopUp hide">
+                      <p class="accountInfo">
+                        Logged in as, <b><i>name</i></b>
+                      </p>
+                      <button class="btn" id="userBtn">Log out</button>
+                    </div>
+                  </span>
+                  <div class="mobileLogo hide"></div>
+                </span>
                 <ion-icon size="large" name="cart-outline"></ion-icon>
 
                 <div class="icon-box place-items-center" id="theme-toggle-btn">
@@ -580,6 +590,7 @@
     <script src="./js/swiper-bundle.min.js"></script>
     <!-- Custom script -->
     <script src="./js/main.js"></script>
+    <script src="./js/login.js"></script>
     <script type="module">
         import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js";
     

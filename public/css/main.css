@@ -166,6 +166,74 @@ body.light-theme {
   transition: opacity 0.25s ease-in;
 }
 
+.loginArea{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--gradient-color);
+}
+
+.loginPopUp{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) ;
+  padding: 10px;
+  background: var(--primary-background-color);
+  border-radius: 10px;
+  top: 40px;
+  width: 200px;
+  transition: 0.5s;
+  border: 2px solid var(--light-color);
+}
+
+.loginPopUp::after{
+  content: "";
+  position: absolute;
+  top: -7.5px;
+  left: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.accountInfo{
+  font-size: 14px;
+  text-transform: capitalize;
+  color: var(--light-color);
+}
+
+.accountInfo b{
+  color: var(--primary-background-color);
+}
+
+#userBtn{
+  padding: 10px;
+  background: var(--light-color);
+  color: var(--light-color-alt);
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+#userBtn:hover{
+  background: var(--secondary-color);
+  color: var(--main-color);
+
+}
+
+.hide{
+  opacity: 0;
+  pointer-events: none;
+}
+
+
 .list {
   display: flex;
   align-items: center;

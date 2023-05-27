@@ -67,6 +67,8 @@ themeToggleBtn.addEventListener("click", function () {
   }
 });
 
+
+
 // Swiper
 const swiper = new Swiper(".ad", {
   // How many slides to show
