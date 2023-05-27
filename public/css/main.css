@@ -306,7 +306,7 @@ body.light-theme {
   overflow: hidden;
   margin-top: 0.9rem;
   padding-bottom: 0.9rem;
-  background: Rgb(74, 122, 149);
+  background: transparent;
 }
 
 .newMusicBox img {
@@ -391,16 +391,16 @@ body.light-theme {
 }
 
 .newMusicText1 .musicTitle {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 600;
-  color: var(--light-color);
+  color: teal;
 }
 
 .newMusicText1 .genre {
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: var(--light-color);
+  color: darkred;
 }
 
 .newMusicText1 p a {
