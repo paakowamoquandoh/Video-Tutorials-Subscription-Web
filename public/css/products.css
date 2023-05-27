@@ -1,13 +1,12 @@
  :root {
 	 --body-color: #070606;
-	 --savanna-bg: lightcoral;
+	 --savanna-bg: rgba(240, 128, 128, 0.658);
 	 --beach-bg: #17191d;
 	 --glacier-bg: #17191d;
 	 --coral-bg: #17191d;
 	 --arrow-fill: #17191d;
 	 --body-font: "Montserrat", sans-serif;
 	 --italic-font: "EB Garamond", serif;
-     --light-color: ;
      --light-color-alt: #fdfdfd;
      --primary-background-color: ;
      --secondary-background-color: ;
@@ -47,7 +46,6 @@ body.light-theme {
 	}
 }
  .proContainer {
-    margin-top: 8rem;
 	 max-width: auto;
 	 border-radius: 4px;
 	 max-height: 700px;
@@ -56,12 +54,26 @@ body.light-theme {
 	 display: flex;
 	 flex-direction: column;
 	 scroll-behavior: smooth;
-	 background-color: var(--light-color);
+	 background-color: var(--savanna-bg);
 	 padding: 0 30px;
 	 overflow-y: auto;
 	 overflow-x: hidden;
 	 position: relative;
 }
+
+.heading{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0.1rem 0.5rem 0.1rem;
+    
+}
+
+.heading h1{
+    color: var(--light-color-alt);
+}
+
  @media (max-width: 480px) {
 	 .proContainer {
 		 height: 100%;
@@ -260,6 +272,9 @@ body.light-theme {
 	 .button-wrapper {
 		 padding: 0 20px;
 	}
+    .noshow{
+        display: none;
+    }
 }
  .button-wrapper svg {
 	 width: 28px;
