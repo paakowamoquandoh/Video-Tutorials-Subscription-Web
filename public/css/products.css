@@ -47,8 +47,8 @@ body.light-theme {
 	}
 }
  .proContainer {
-    margin-top: 4rem;
-	 max-width: 1400px;
+    margin-top: 8rem;
+	 max-width: auto;
 	 border-radius: 4px;
 	 max-height: 700px;
 	 height: 90vh;
