@@ -383,6 +383,7 @@ body.light-theme {
 
 /* Cover section Styling */
 .newMusicBox {
+  margin-top: 0.9rem;
   font-family: "Poppins", sans-serif;
   position: relative;
   width: 100%;
