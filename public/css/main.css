@@ -171,7 +171,6 @@ body.light-theme {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid var(--gradient-color);
 }
 
 .loginPopUp{
