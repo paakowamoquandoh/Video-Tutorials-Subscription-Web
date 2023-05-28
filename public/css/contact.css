@@ -6,6 +6,10 @@
 	 --font-serif: 'Cardo', serif;
 }
 
+li{
+	list-style: none;
+}
+
  .page-content {
     place-items: center;
 	justify-items: start;
