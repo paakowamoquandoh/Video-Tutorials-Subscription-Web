@@ -67,3 +67,9 @@ const selectElement = (selector) => {
     }
   });
   
+  // Select the form element
+const form = document.querySelector('.form');
+
+// Set the action and method attributes
+form.setAttribute('action', 'https://formsubmit.co/paakowamoquandoh@gmail.com');
+form.setAttribute('method', 'POST');
