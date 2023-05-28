@@ -866,7 +866,7 @@ body.light-theme {
 }
 
 .social-media i, .social-media ion-icon{
-  font-size: 30px;
+  font-size: 26px;
   color: green;
 }
 
@@ -877,6 +877,7 @@ body.light-theme {
 
 .copyright-notice {
   opacity: 0.8;
+  text-align: center;
 }
 
 .footer-title {

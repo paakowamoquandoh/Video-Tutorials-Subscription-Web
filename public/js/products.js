@@ -66,4 +66,15 @@ const selectElement = (selector) => {
       localStorage.removeItem("currentTheme");
     }
   });
+
   
+  // Select all elements with the class "more-menu"
+const moreMenuElements = document.querySelectorAll('.more-menu');
+
+// Add an event listener to each "more-menu" element
+moreMenuElements.forEach((element) => {
+  element.addEventListener('click', () => {
+    // Open the "booking.html" page
+    window.location.href = 'contact.html';
+  });
+});
