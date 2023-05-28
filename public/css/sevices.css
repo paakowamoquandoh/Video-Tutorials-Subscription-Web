@@ -174,9 +174,9 @@ ul li {
     place-items: center;
 	justify-items: start;
 	 display: grid;
-	 grid-gap: 1rem;
+	 grid-gap: 1.5rem;
 	 padding: 1rem;
-	 max-width: 1222px;
+	 max-width: 1480px;
 	 margin: 0rem auto 0.2rem auto;
 	 font-family: var(--font-sans);
 }
@@ -204,7 +204,7 @@ ul li {
 }
  @media (min-width: 600px) {
 	 .card {
-		 height: 350px;
+		 height: 500px;
 	}
 }
  .card:before {
@@ -259,27 +259,28 @@ ul li {
 }
  .bookTitle {
 	background-color: var(--primary-background-color);
-	padding: 5px 0px;
+	padding: 5px;
 	top: 50%;
 	 font-size: 1.8rem;
 	 font-weight: bold;
 	 line-height: 1.2;
-	 color: var(--light-color-alt);
+	 color: var(--light-color);
 }
  .copy {
 	 font-family: var(--font-serif);
-	 font-size: 1.125rem;
+	 font-size: 2rem;
 	 font-style: italic;
-	 line-height: 1.35;
+	 line-height: 1.15;
 	 text-transform: capitalize;
 }
+
  .bookBtn {
 	 cursor: pointer;
 	 margin-top: 1.5rem;
 	 padding: 0.75rem 1.5rem;
-	 font-size: 0.65rem;
+	 font-size: 1.8rem;
 	 font-weight: bold;
-	 letter-spacing: 0.025rem;
+	 letter-spacing: 0.06rem;
 	 text-transform: uppercase;
 	 color: white;
 	 background-color: black;

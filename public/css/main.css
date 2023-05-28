@@ -867,7 +867,7 @@ body.light-theme {
 
 .social-media i, .social-media ion-icon{
   font-size: 26px;
-  color: green;
+  color: teal;
 }
 
 .social-media i:hover, .social-media ion-icon:hover{
