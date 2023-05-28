@@ -2,7 +2,7 @@
 	 --body-color: #070606;
 	 --savanna-bg: rgba(240, 128, 128, 0.658);
 	 --beach-bg: #17191d;
-	 --glacier-bg: #17191d;
+	 --glacier-bg: #373c46;
 	 --coral-bg: #17191d;
 	 --arrow-fill: #17191d;
 	 --body-font: "Montserrat", sans-serif;
@@ -54,7 +54,7 @@ body.light-theme {
 	 display: flex;
 	 flex-direction: column;
 	 scroll-behavior: smooth;
-	 background-color: var(--savanna-bg);
+	 background-color: rgba(174, 243, 232, 0.555);
 	 padding: 0 30px;
 	 overflow-y: auto;
 	 overflow-x: hidden;
@@ -123,7 +123,7 @@ body.light-theme {
 	 display: flex;
 	 flex-direction: column;
 	 justify-content: space-between;
-	 max-width: 320px;
+	 max-width: 420px;
 }
  @media screen and (max-width: 930px) {
 	 .left-side {
@@ -158,7 +158,7 @@ body.light-theme {
 }
  .main-title {
 	 font-family: var(--italic-font);
-	 font-size: 90px;
+	 font-size: 80px;
 	 font-weight: 400;
 	 margin-top: 10px;
 	 line-height: 1em;
@@ -187,7 +187,8 @@ body.light-theme {
 	 transition-delay: 0.3s;
 }
  .main-content .more-menu {
-	 font-size: 13px;
+	 font-size: 16px;
+	 color: rgb(19, 236, 236);
 	 font-weight: 500;
 	 display: flex;
 	 align-items: center;
@@ -311,7 +312,7 @@ body.light-theme {
 	 background-position: left bottom;
 }
  .button-wrapper .swiper-button:hover svg {
-	 stroke: #fff;
+	 stroke: teal;
 }
  .button-wrapper .swiper-prev-button {
 	 background: linear-gradient(to left, var(--body-color) 40%, transparent 0%);
@@ -325,6 +326,7 @@ body.light-theme {
  .button-wrapper .swiper-prev-button:hover {
 	 background-position: right bottom;
 }
+
  .swiper-slide {
 	 opacity: 0 !important;
 	 transition: 0.4s;
