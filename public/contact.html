@@ -1,145 +1,182 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Education | itMustBeGinger</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./media/icons/nn.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./media/icons/nn.png"
+    />
     <!-- Remix icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- Swiper.js styles -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header class="header" id="header">
+      <nav class="navbar container">
+        <a class="logoBox" href="./index.html">
+          <img src="./media/icons/nn.png" alt="" />
+          <h2 class="logo">itMustBeGinger</h2>
+        </a>
 
-        <nav class="navbar container">
-            <a class="logoBox" href="./index.html">
-                <img src="./media/icons/nn.png" alt="">
-                <h2 class="logo">itMustBeGinger</h2>
-            </a>
+        <div class="menu" id="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="./allclasses.html" class="list-link">Products</a>
+            </li>
+            <li class="list-item">
+              <a href="./membership.html" class="list-link"
+                >Education/Academy</a
+              >
+            </li>
 
-            <div class="menu" id="menu">
-                <ul class="list">
-                  <li class="list-item">
-                    <a href="./allclasses.html" class="list-link">Products</a>
-                </li>
-                  <li class="list-item">
-                      <a href="./membership.html" class="list-link ">Education/Academy</a>
-                  </li>
+            <li class="list-item">
+              <a href="./services.html" class="list-link">Services</a>
+            </li>
+            <li class="list-item">
+              <a href="./contact.html" class="list-link current">Booking</a>
+            </li>
+            <span href="" class="btn sign-up-btn screen-lg-hidden">
+              <span class="list-link"><i class="ri-user-6-line"></i></span>
+            </span>
+          </ul>
+        </div>
 
-                  <li class="list-item">
-                      <a href="./services.html" class="list-link ">Services</a>
-                  </li>
-                  <li class="list-item">
-                      <a href="./contact.html" class="list-link current">Booking</a>
-                  </li>
-                    <span href="" class="btn sign-up-btn screen-lg-hidden">
-                      <span class="list-link"><i class="ri-user-6-line"></i></span>
-                    </span>
-                </ul>
+        <div class="list list-right">
+          <span href="" class="btn sign-up-btn screen-sm-hidden">
+            <span class="loginArea" id="loginArea">
+              <span class="list-link userLogo"
+                ><i class="ri-user-6-line"></i
+              ></span>
+
+              <div class="loginPopUp hide">
+                <p class="accountInfo">
+                  Logged in as, <b><i>name</i></b>
+                </p>
+                <button class="btn" id="userBtn">Log out</button>
+              </div>
+            </span>
+            <div class="mobileLogo hide"></div>
+          </span>
+
+          <span onclick="">
+            <div class="cartBox">
+              <div class="carty">
+                <ion-icon
+                  class="shopIcon"
+                  size="large"
+                  name="cart-outline"
+                ></ion-icon>
+                <div class="cartAmount" id="itemsUpdate">0</div>
+              </div>
             </div>
+          </span>
 
-            <div class="list list-right">
-                
-                <span href="" class="btn sign-up-btn screen-sm-hidden">
-                  <span class="loginArea" id="loginArea">
-                    <span class="list-link userLogo"><i class="ri-user-6-line"></i></span>
-        
-                    <div class="loginPopUp hide">
-                      <p class="accountInfo">
-                        Logged in as, <b><i>name</i></b>
-                      </p>
-                      <button class="btn" id="userBtn">Log out</button>
-                    </div>
-                  </span>
-                  <div class="mobileLogo hide"></div>
-                </span>
-               
-                <span onclick="">
-                  <div class="cartBox">
-                    <div class="carty">
-                      <ion-icon class="shopIcon" size="large" name="cart-outline"></ion-icon>
-                      <div class="cartAmount" id="itemsUpdate">0</div>
-                    </div>
-                  </div>
-                </span>
+          <div class="icon-box place-items-center" id="theme-toggle-btn">
+            <i class="ri-sun-line sun-icon"></i>
+            <i class="ri-moon-line moon-icon"></i>
+          </div>
 
-                <div class="icon-box place-items-center" id="theme-toggle-btn">
-                    <i class="ri-sun-line sun-icon"></i>
-                    <i class="ri-moon-line moon-icon"></i>
-                  </div>
-        
-                  <div style="display: none;" class="icon-box place-items-center" id="search-icon">
-                    <i class="ri-search-line"></i>
-                  </div>
-        
-                  <div
-                    class="icon-box place-items-center screen-lg-hidden menu-toggle-icon"
-                    id="menu-toggle-icon"
-                  >
-                    <i class="ri-menu-3-line open-menu-icon"></i>
-                    <i class="ri-close-line close-menu-icon"></i>
-                  </div>
-                
-            </div>
+          <div
+            style="display: none"
+            class="icon-box place-items-center"
+            id="search-icon"
+          >
+            <i class="ri-search-line"></i>
+          </div>
 
-        </nav>
-
+          <div
+            class="icon-box place-items-center screen-lg-hidden menu-toggle-icon"
+            id="menu-toggle-icon"
+          >
+            <i class="ri-menu-3-line open-menu-icon"></i>
+            <i class="ri-close-line close-menu-icon"></i>
+          </div>
+        </div>
+      </nav>
     </header>
 
-      <!-- Search -->
-      <div class="search-form-container container" id="search-form-container">
-        <div class="form-container">
-          <form action="" class="form">
-            <input
-              class="form-input"
-              type="text"
-              placeholder="What are you looking for?"
-            />
-            <button class="btn form-btn icon-box" type="submit">
-              <i class="ri-search-line"></i>
-            </button>
-          </form>
-          <span class="form-note">Or press ESC to close.</span>
-        </div>
-        <div
-          class="btn form-close-btn icon-box place-items-center"
-          id="form-close-btn"
-        >
-          <i class="ri-close-line"></i>
-        </div>
+    <!-- Search -->
+    <div class="search-form-container container" id="search-form-container">
+      <div class="form-container">
+        <form action="" class="form">
+          <input
+            class="form-input"
+            type="text"
+            placeholder="What are you looking for?"
+          />
+          <button class="btn form-btn icon-box" type="submit">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+        <span class="form-note">Or press ESC to close.</span>
       </div>
-
-      <section>
-          <div class="aboutContainer">
-      <form class="contactForm" onsubmit="; reset(); return false;">
-        <h3>Get In Touch</h3>
-        <input type="text" id="nameOfUser" placeholder="Your name" required />
-        <input type="email" id="userEmail" placeholder="Your email" required />
-        <input type="text" id="phoneNumber" placeholder="Phone No." required />
-        <textarea
-          name=""
-          id="message"
-          cols="30"
-          rows="5"
-          placeholder="How may we be of help?"
-        ></textarea>
-        <button type="submit">Send</button>
-      </form>
+      <div
+        class="btn form-close-btn icon-box place-items-center"
+        id="form-close-btn"
+      >
+        <i class="ri-close-line"></i>
+      </div>
     </div>
-      </section>
 
+    <section>
+      <div class="aboutContainer">
+        <form action="https://formsubmit.co/paakowamoquandoh@gmail.com" method="POST" class="contactForm" onsubmit="; reset();">
+          <h3 class="">Hair and Makeup Booking</h3>
 
+          
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+        
 
-     
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+         
 
-  <!-- Footer -->
-  <footer class="footer section">
+          
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+         
+
+          
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required />
+         
+
+          
+            <label for="service">Service:</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="Hair Styling">Hair Styling</option>
+              <option value="Makeup">Makeup</option>
+              <option value="Hair and Makeup">Hair and Makeup</option>
+            </select>
+         
+
+        
+            <label for="message">Message:</label>
+            <textarea cols="20" rows="10" id="message" name="message"></textarea>
+          
+
+          <button type="submit" class="btn-submit">Book Now</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section">
       <div class="footer-container container">
         <div class="company-data">
           <a href="./index.html">
@@ -148,41 +185,64 @@
 
           <ul class="list social-media">
             <li class="list-item">
-              <a target="_blank" href="https://www.instagram.com/it_must_be_ginger/" class="list-link"
+              <a
+                target="_blank"
+                href="https://www.instagram.com/it_must_be_ginger/"
+                class="list-link"
                 ><i class="ri-instagram-fill"></i
               ></a>
             </li>
             <li class="list-item">
-              <a target="_blank" href="https://web.facebook.com/ItmustbeGinger" class="list-link"
+              <a
+                target="_blank"
+                href="https://web.facebook.com/ItmustbeGinger"
+                class="list-link"
                 ><i class="ri-facebook-circle-fill"></i
               ></a>
             </li>
             <li class="list-item">
-              <a target="_blank" href="https://twitter.com/ginger_makeupGH" class="list-link"><i class="ri-twitter-fill"></i></a>
+              <a
+                target="_blank"
+                href="https://twitter.com/ginger_makeupGH"
+                class="list-link"
+                ><i class="ri-twitter-fill"></i
+              ></a>
             </li>
             <li class="list-item">
-              <a target="_blank" href="https://www.youtube.com/@WendySomuah" class="list-link"
-                ><i class="ri-youtube-fill"></i></a>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/@WendySomuah"
+                class="list-link"
+                ><i class="ri-youtube-fill"></i
+              ></a>
             </li>
             <li class="list-item">
-              <a target="_blank" href="https://www.pinterest.com/wendysomuah/?eq=itmustbe&etslf=7112" class="list-link"
+              <a
+                target="_blank"
+                href="https://www.pinterest.com/wendysomuah/?eq=itmustbe&etslf=7112"
+                class="list-link"
                 ><i class="ri-pinterest-fill"></i
               ></a>
             </li>
             <li class="list-item">
-              <a target="_blank" href="https://www.tiktok.com/@itmustbeginger" class="list-link"
-                ><ion-icon name="logo-tiktok"></ion-icon></a>
+              <a
+                target="_blank"
+                href="https://www.tiktok.com/@itmustbeginger"
+                class="list-link"
+                ><ion-icon name="logo-tiktok"></ion-icon
+              ></a>
             </li>
             <li class="list-item">
               <a target="_blank" href="" class="list-link"
-                ><i class="ri-snapchat-fill"></i></a>
+                ><i class="ri-snapchat-fill"></i
+              ></a>
             </li>
           </ul>
 
           <span class="copyright-notice"
             >&copy;2023 itMustBeGinger. All rights reserved.</span
           >
-        </div>        
+        </div>
       </div>
     </footer>
 
@@ -191,7 +251,13 @@
     <!-- Custom script -->
     <script src="./js/nav.js"></script>
     <script src="./js/login.js"></script>
-      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
