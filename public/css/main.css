@@ -1181,4 +1181,282 @@ body.light-theme {
   margin-top: -30px;
 }
 
+.sectionOfProducts {
+  margin: none;
+  width: 100%;
+}
+
+section .productsBox .mainProArea {
+  justify-content: center;
+  margin-top: -30px;
+}
+
+section aside .productsBox {
+  width: 58%;
+  height: auto;
+}
+
+section aside {
+  width: 40%;
+}
+
+section .productsBox {
+  padding: 0;
+  margin: 0;
+}
+
+section .productsBox .mainProArea .itemCard {
+  width: 170px;
+  margin: 6px 0px;
+  /* padding: 5px 10px; */
+}
+
+section .productsBox section .sortTitle {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .productsBox section .sortTitle h4 {
+  margin: 6px;
+}
+
+section .productsBox section .sortTitle button {
+  width: 95px;
+}
+
+section .productsBox section .sortTitle button {
+  margin-bottom: 20px;
+}
+
+section aside .filterArea .itemsCheck li {
+  font-size: 13.4px;
+}
+
+section aside .filterArea .productItems {
+  text-align: center;
+}
+
+section .productsBox section .sortTitle .sortSelect button ion-icon {
+  font-size: 18px;
+  color: rgb(37, 37, 37);
+}
+
+section .productsBox section .sortTitle .sortSelect .sortOptions {
+  width: 95px;
+  padding: 2px 7px 7px 7px;
+}
+
+section .productsBox section .sortTitle .sortSelect .sortOptions li {
+  font-size: 15px;
+}
+
+section aside .filterArea .itemsCheck li i {
+  font-size: 30px;
+}
+
+section aside .filterArea .clothesChecked h6 {
+  font-size: 12px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#modal {
+  overflow-y: scroll;
+  padding-top: 4.8rem;
+}
+
+#modal .productInfo {
+  width: 90vw;
+  flex-wrap: wrap;
+  margin: 2rem 3px 1px 1px;
+  padding: 25px 10px;
+}
+
+.sizeRadioBtn {
+  width: 40px;
+  height: 40px;
+
+  line-height: 40px;
+
+  font-size: 12px;
+}
+
+.subHeading {
+  font-size: 20px;
+}
+
+.btn {
+  width: 50%;
+}
+
+.headingOther {
+  font-size: 1.8rem;
+}
+
+.imageSlider {
+  width: 100%;
+  padding-bottom: 0;
+  background-position: center;
+  margin: 0;
+}
+
+.itemDetails {
+  width: 100%;
+  margin: 0;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+}
+
+.productDetails .singleProductImgs {
+  width: 100%;
+  margin-right: 0px;
+}
+
+#mainProduct {
+  height: 400px;
+}
+
+.productDetails .productDesc {
+  width: 100%;
+}
+
+#close-modal-btn {
+  position: absolute;
+  top: 80px;
+  right: 25px;
+}
+
+.rating img {
+  height: 20px;
+  width: 20px;
+}
+
+.cartFooterButton {
+  margin: 10px 1px;
+}
+section aside {
+  padding-top: 0px;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+section .productsBox section {
+  width: 100%;
+  /* height: 40px; */
+  margin: 0;
+  margin-top: 0spx;
+}
+.checkCart {
+  width: 80%;
+}
+
+.miniCart h2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -8px;
+  margin-bottom: -18px;
+  font-size: 28px;
+}
+
+}
+
+@media (max-device-width: 380px) {
+  #modal .productInfo {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    width: 90vw;
+    height: auto;
+  }
+
+  #close-modal-btn {
+    position: absolute;
+    top: 55px;
+    right: 25px;
+    color: #1a1a1a;
+  }
+
+  .rating {
+    font-size: 10px;
+  }
+
+  .sizeRadioBtn {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  .imageSlider {
+    padding-top: 6rem;
+    margin-bottom: -30px;
+    height: 300px;
+  }
+
+  .itemPrice {
+    font-size: 20px;
+  }
+
+  .itemDiscount {
+    font-size: 14px;
+  }
+
+  .rating img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .subHeading {
+    font-size: 15px;
+  }
+
+  .btn {
+    width: 45%;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  #modal {
+    margin-top: 2rem;
+  }
+
+  .checkCart {
+    width: 80%;
+  }
+
+  .miniCart h2 {
+    display: block;
+  }
+  .swiper h2 {
+    display: block;
+  }
+}
+
+@media (max-device-width: 830px){
+
+  section aside .productsBox {
+    width: 70%;
+  }
+
+  section aside {
+    width: 30%;
+  }
+
+  section .productsBox .mainProArea .itemCard {
+    width: 200px;
+    margin: 6px 0px;
+    /* padding: 5px 10px; */
+  }
 }

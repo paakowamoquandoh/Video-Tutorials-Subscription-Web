@@ -158,29 +158,34 @@
 
 
 
-     <!-- Newsletter -->
+     < <!-- Newsletter -->
      <section class="newsletter section">
-
-      <div class="container">
-
-          <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
-
-          <div class="form-container-inner">
-              <h6 class="title newsletter-title">Subscribe</h6>
-              <p class="newsletter-description">Add your email to recieve newsletters from <i>itMustBeGinger</i></p>
-
-              <form action="" class="form">
-                  <input class="form-input" type="text" placeholder="Enter your email address">
-                  <button class="btn form-btn" type="submit">
-                      <i class="ri-mail-send-line"></i>
-                  </button>
-              </form>
-
-          </div>
-
-      </div>
-
-  </section>
+ 
+         <div class="container">
+ 
+             <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
+ 
+             <div class="form-container-inner">
+                 <h6 class="title newsletter-title">Subscribe</h6>
+                 <p class="newsletter-description">Add your email to recieve newsletters from <i>itMustBeGinger</i></p>
+ 
+                 <form action="https://formsubmit.co/itmustbginger@gmail.com" method="POST" class="form">
+                     <input type="email" name="New Subscription" class="form-input" placeholder="Enter your email address">
+                     <input type="hidden" name="_next" value="http://127.0.0.1:5500/public/thanks.html">
+                     <input type="hidden" name="_subject"  value="New Subscriber!">
+                     <input type="hidden" name="_captcha" value="false">
+                     <input type="hidden" name="_autoresponse" value="Thanks for Subscribing">
+                     <button class="btn form-btn" type="submit" onclick="reset();">
+                         <i class="ri-mail-send-line"></i>
+                     </button>
+                 </form>
+ 
+             </div>
+ 
+         </div>
+ 
+     </section>
+ 
 
   <!-- Footer -->
   <footer class="footer section">

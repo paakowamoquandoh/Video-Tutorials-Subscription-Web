@@ -395,10 +395,12 @@
   
   section .productsBox .mainProArea .itemCard .colorTag button {
 	background: var(--light-color);
-	color: #fff;
+	color: var(--secondary-background-color);
+	font-weight: bold;
 	border: none;
 	padding: 0.5px 8px;
-	margin-top: 1.5px;
+	font-size: 13px;
+	margin-top: 3px;
 	border-radius: 2px;
 	border: 1px solid rgb(0, 0, 0, 0.1);
   }
@@ -467,7 +469,6 @@
   
   section aside .filterArea .filter {
 	font-size: 14.8px;
-	color: white;
   }
   
   section aside .filterArea .productItems {
@@ -478,7 +479,7 @@
   section aside .itemsCheck {
 	width: 100%;
 	height: auto;
-	border-top: 1px solid rgb(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(134, 134, 134, 0.418);
 	margin-top: 10px;
   }
   
@@ -489,8 +490,8 @@
 	justify-content: space-between;
 	padding: 5px 8px;
 	margin: 10px 0px;
-	background: var(--main-color);
-	color: var(--secondary-color);
+	background: var(--light-color);
+	color: var(--secondary-background-color);
   }
   
   section aside .filterArea .clothesChecked h6 {
@@ -498,7 +499,7 @@
   }
   
   section aside .filterArea .clothesChecked i {
-	font-size: 16px;
+	font-size: 15px;	
   }
   
   section aside .filterArea .itemsCheck_off {
@@ -513,7 +514,7 @@
 	align-items: center;
 	justify-content: space-between;
 	margin: auto;
-	font-size: 17px;
+	font-size: 15px;
 	font-weight: 500;
   }
   
@@ -521,15 +522,16 @@
 	font-size: 28px;
 	transition: 0.3s linear;
 	cursor: pointer;
-	color: var(--alternate);
+	color: var(--light-color-alt);
+	transition: all 1s;
   }
   
-  /* section aside .filterArea .itemsCheck li i:hover{
-	color: orangered;
-  } */
+  section aside .filterArea .itemsCheck li i:hover{
+	color:teal;
+  }
   
   section aside .filterArea .itemsCheck li .i_active {
-	color: var(--main-color);
+	color: teal;
   }
   
   section aside .filterArea .itemsCheck .priceInput {
