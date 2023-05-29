@@ -1,6 +1,6 @@
 /*  */
 .sectionOfProducts {
-	width: 85%;
+	width: 82%;
 	height: auto;
 	display: flex;
 	margin: 9.2rem auto 0px auto;
@@ -8,12 +8,12 @@
   }
   
   section aside .productsBox {
-	width: 78%;
+	width: 75%;
 	height: auto;
   }
   
   section aside {
-	width: 18%;
+	width: 25%;
   }
   
   section .productsBox {
