@@ -32,14 +32,7 @@
 }
 
 /*  */
-header{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: transparent;
- }
+
 
 .navBar{
     height: 7.2rem;

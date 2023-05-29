@@ -116,7 +116,430 @@
       </div>
 
        <!--  -->
-        
+            <!--  -->
+    <section class="sectionOfProducts">
+      <aside>
+        <div class="filterArea">
+          <h6 class="filter">
+            <i class="bi bi-funnel-fill"></i> Filter : Products
+          </h6>
+          <p class="productItems">
+            <!-- All Items: <span>214</span> -->
+          </p>
+          <div class="itemsCheck">
+            <div class="clothesChecked">
+              <h6>Categories</h6>
+              <i class="bi bi-node-minus-fill"></i>
+            </div>
+            <li>
+              Straight<i
+                id="straight"
+                class="bi bi-toggle2-off"
+                title="clothesOn"
+              ></i>
+            </li>
+            <li>
+              Short<i
+                onclick="short()"
+                id="short"
+                class="bi bi-toggle2-off"
+                title="shortOn"
+              ></i>
+            </li>
+            <li>
+               Curvy<i
+                onclick="curvy()"
+                id="curvy"
+                class="bi bi-toggle2-off"
+                title="curvyOn"
+              ></i>
+            </li>
+            <li>
+              Wavy<i
+                onclick="wavyOnly()"
+                id="wavy"
+                class="bi bi-toggle2-off"
+                title="wavyOn"
+              ></i>
+            </li>
+            <li>
+              Long<i
+                onclick="long()"
+                id="long"
+                class="bi bi-toggle2-off"
+                title="longOn"
+              ></i>
+            </li>
+          </div>
+          <!--  -->
+          <div class="itemsCheck">
+            <div class="clothesChecked">
+              <h6>Group by</h6>
+              <i class="bi bi-node-minus-fill"></i>
+            </div>
+            <li>Wigs<i id="women" class="bi bi-toggle2-off"></i></li>
+            <li>Extensions<i id="men" class="bi bi-toggle2-off"></i></li>
+            <li>others<i id="allKids" class="bi bi-toggle2-off"></i></li>
+          </div>
+          <!--  -->
+        </div>
+      </aside>
+      <div class="productsBox">
+        <section>
+          <div class="sortTitle">
+            <h4><i>Wig Collection and products</i></h4>
+            <div class="sortSelect">
+              <button id="durationSortBtn">
+                <h5>Sort By</h5>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </button>
+              <div class="sortOptions">
+                <li onclick="lowest()" id="lowPrice">Lowest</li>
+                <li onclick="highest()" id="highest">Highest</li>
+                <li onclick="newest()" id="newest">Newest</li>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+         
+          <div id="modal" class="modal-container">
+            <button id="close-modal-btn">&#10060;</button>
+            <!--           
+      <div class="productInfo">       
+        <div class="imageSlider">
+            <div class="productImages">
+                <img src="./media/hair/h9.jpg" class="active" alt="">
+                <img src="./media/hair/h9.jpg" alt="">
+                <img src="./media/hair/h9.jpg" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="ItemDetails">
+            <h2 class="productBrand"></h2>
+            <p class="itemDescription"></p>
+            <span class="itemPrice"></span>
+            <span class="itemDiscount">( 50% Off )</span>
+
+           
+              <div class="rating">
+                <img src="./img/star.png" class="star" alt="">
+                <img src="./img/star.png" class="star" alt="">
+                <img src="./img/star.png" class="star" alt="">
+                <img src="./img/star.png" class="star" alt="">
+                <img src="./img/star.png" class="star" alt="">
+                  <span class="ratingCount">4,002 reviews</span>
+             </div>
+
+            <p class="subHeading">Select Size</p>
+            <input type="radio" name="size" value="xs" checked hidden id="sSize">
+            <label for="sSize" class="sizeRadioBtn check">xs</label>
+            <input type="radio" name="size" value="s" checked hidden id="sSize">
+            <label for="sSize" class="sizeRadioBtn check">s</label>
+            <input type="radio" name="size" value="m" hidden id="mSize">
+            <label for="mSize" class="sizeRadioBtn">m</label>
+            <input type="radio" name="size" value="l" hidden id="lSize">
+            <label for="lSize" class="sizeRadioBtn">l</label>
+            <input type="radio" name="size" value="xl" hidden id="xlSize">
+            <label for="xlSize" class="sizeRadioBtn">xl</label>
+            <input type="radio" name="size" value="xxl" hidden id="xxlSize">
+            <label for="xxlSize" class="sizeRadioBtn">xxl</label>
+
+            <button class="btn cartButton">Add to Cart</button>
+            <button class="btn">Buy Now</button>
+        </div>
+      </div> -->
+          </div>
+        </section>
+        <div class="mainProArea" id="mainProArea">
+          <a href="" class="itemCard">
+                  <img src="./media/hair/h9.jpg" alt="">
+                  <h5 class="cardTitle" title="African Print Dress">African Print Dress</h5>
+                  <p>Wig Product</p>
+                  <div class="itemPrice">
+                      <h5>$18.25</h5>
+                      <h5><del>$28.33</del></h5>
+                  </div>
+                  <div class="colorTag">
+                      <div class="stars">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      <button>Buy</button>
+                  </div>
+              </a>
+              <a href="" class="itemCard">
+                <img src="./media/hair/h9.jpg" alt="">
+                  <h5 class="cardTitle" title="African Print Dress">African Print Dress</h5>
+                  <p>Wig Product</p>
+                  <div class="itemPrice">
+                      <h5>$18.25</h5>
+                      <h5><del>$28.33</del></h5>
+                  </div>
+                  <div class="colorTag">
+                      <div class="stars">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      <button>Buy</button>
+                  </div>
+              </a>
+              <a href="" class="itemCard">
+                <img src="./media/hair/h9.jpg" alt="">
+                  <h5 class="cardTitle" title="African Print Dress">African Print Dress</h5>
+                  <p>Wig Product</p>
+                  <div class="itemPrice">
+                      <h5>$18.25</h5>
+                      <h5><del>$28.33</del></h5>
+                  </div>
+                  <div class="colorTag">
+                      <div class="stars">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      <button>Buy</button>
+                  </div>
+              </a>
+              <a href="" class="itemCard">
+                <img src="./media/hair/h9.jpg" alt="">
+                  <h5 class="cardTitle" title="African Print Dress">African Print Dress</h5>
+                  <p>Wig Product</p>
+                  <div class="itemPrice">
+                      <h5>$18.25</h5>
+                      <h5><del>$28.33</del></h5>
+                  </div>
+                  <div class="colorTag">
+                      <div class="stars">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      <button>Buy</button>
+                  </div>
+              </a>
+              <a href="" class="itemCard">
+                <img src="./media/hair/h9.jpg" alt="">
+                  <h5 class="cardTitle" title="African Print Dress">African Print Dress</h5>
+                  <p>Wig Product</p>
+                  <div class="itemPrice">
+                      <h5>$18.25</h5>
+                      <h5><del>$28.33</del></h5>
+                  </div>
+                  <div class="colorTag">
+                      <div class="stars">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      <button>Buy</button>
+                  </div>
+              </a>
+              <a href="" class="itemCard">
+                <img src="./media/hair/h9.jpg" alt="">
+                <h5 class="cardTitle" title="African Print Dress">African Print Dress</h5>
+                <p>Wig Product</p>
+                <div class="itemPrice">
+                    <h5>$18.25</h5>
+                    <h5><del>$28.33</del></h5>
+                </div>
+                <div class="colorTag">
+                    <div class="stars">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    <button>Buy</button>
+                </div>
+            </a>
+            <a href="" class="itemCard">
+              <img src="./media/hair/h9.jpg" alt="">
+                <h5 class="cardTitle" title="African Print Dress">African Print Dress</h5>
+                <p>Wig Product</p>
+                <div class="itemPrice">
+                    <h5>$18.25</h5>
+                    <h5><del>$28.33</del></h5>
+                </div>
+                <div class="colorTag">
+                    <div class="stars">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    <button>Buy</button>
+                </div>
+            </a>
+            <a href="" class="itemCard">
+              <img src="./media/hair/h9.jpg" alt="">
+                <h5 class="cardTitle" title="African Print Dress">African Print Dress</h5>
+                <p>Wig Product</p>
+                <div class="itemPrice">
+                    <h5>$18.25</h5>
+                    <h5><del>$28.33</del></h5>
+                </div>
+                <div class="colorTag">
+                    <div class="stars">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    <button>Buy</button>
+                </div>
+            </a>
+            <a href="" class="itemCard">
+              <img src="./media/hair/h9.jpg" alt="">
+                <h5 class="cardTitle" title="African Print Dress">African Print Dress</h5>
+                <p>Wig Product</p>
+                <div class="itemPrice">
+                    <h5>$18.25</h5>
+                    <h5><del>$28.33</del></h5>
+                </div>
+                <div class="colorTag">
+                    <div class="stars">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    <button>Buy</button>
+                </div>
+            </a>
+            <a href="" class="itemCard">
+              <img src="./media/hair/h9.jpg" alt="">
+                <h5 class="cardTitle" title="African Print Dress">African Print Dress</h5>
+                <p>Wig Product</p>
+                <div class="itemPrice">
+                    <h5>$18.25</h5>
+                    <h5><del>$28.33</del></h5>
+                </div>
+                <div class="colorTag">
+                    <div class="stars">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    <button>Buy</button>
+                </div>
+            </a>
+            <a href="" class="itemCard">
+              <img src="./media/hair/h9.jpg" alt="">
+              <h5 class="cardTitle" title="African Print Dress">African Print Dress</h5>
+              <p>Wig Product</p>
+              <div class="itemPrice">
+                  <h5>$18.25</h5>
+                  <h5><del>$28.33</del></h5>
+              </div>
+              <div class="colorTag">
+                  <div class="stars">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  <button>Buy</button>
+              </div>
+          </a>
+          <a href="" class="itemCard">
+            <img src="./media/hair/h9.jpg" alt="">
+              <h5 class="cardTitle" title="African Print Dress">African Print Dress</h5>
+              <p>Wig Product</p>
+              <div class="itemPrice">
+                  <h5>$18.25</h5>
+                  <h5><del>$28.33</del></h5>
+              </div>
+              <div class="colorTag">
+                  <div class="stars">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  <button>Buy</button>
+              </div>
+          </a>
+          <a href="" class="itemCard">
+            <img src="./media/hair/h9.jpg" alt="">
+              <h5 class="cardTitle" title="African Print Dress">African Print Dress</h5>
+              <p>Wig Product</p>
+              <div class="itemPrice">
+                  <h5>$18.25</h5>
+                  <h5><del>$28.33</del></h5>
+              </div>
+              <div class="colorTag">
+                  <div class="stars">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  <button>Buy</button>
+              </div>
+          </a>
+          <a href="" class="itemCard">
+            <img src="./media/hair/h9.jpg" alt="">
+              <h5 class="cardTitle" title="African Print Dress">African Print Dress</h5>
+              <p>Wig Product</p>
+              <div class="itemPrice">
+                  <h5>$18.25</h5>
+                  <h5><del>$28.33</del></h5>
+              </div>
+              <div class="colorTag">
+                  <div class="stars">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  <button>Buy</button>
+              </div>
+          </a>
+          <a href="" class="itemCard">
+            <img src="./media/hair/h9.jpg" alt="">
+              <h5 class="cardTitle" title="African Print Dress">African Print Dress</h5>
+              <p>Wig Product</p>
+              <div class="itemPrice">
+                  <h5>$18.25</h5>
+                  <h5><del>$28.33</del></h5>
+              </div>
+              <div class="colorTag">
+                  <div class="stars">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  <button>Buy</button>
+              </div>
+          </a>
+        </div>
+      </div>
+    </section>
        <!--  -->
 
 
