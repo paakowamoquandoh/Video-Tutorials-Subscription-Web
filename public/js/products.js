@@ -224,7 +224,7 @@ class UI {
         <a class="itemCard" >
          <div id="itemCard" data-id="${product.id}">
          <img class="itemImage" src=${product.image} alt="">
-         <h5 class="cardTitle" title="African Print Dress">${product.title}</h5>
+         <h5 class="cardTitle" title="">${product.title}</h5>
          <p>${product.description}</p>
          <div class="itemPrice">
              <h5>Ghc ${product.price}</h5>
@@ -275,7 +275,7 @@ class UI {
       </div>
       <div class="ItemDetails">
         <h2 style="display: none;" class="productBrand">${product.title}</h2>
-        <h4 class="itemDescription"><b>African Made ${product.description}</b></h4>
+        <h4 class="itemDescription"><b>${product.description}</b></h4>
         <p class="itemDescription">${product.brief}</p>
         <span class="itemPrice">$${product.price}</span>
         <span class="itemDiscount">(50% Off)</span>
@@ -496,10 +496,10 @@ class UI {
     const itemDiv = document.createElement("div");
     itemDiv.classList.add("cartItem");
     itemDiv.innerHTML = `
-     <img src=${item.thumbnail} alt="">          
+     <img src=${item.image} alt="">          
      <div>
       <h4>${item.title}</h4>
-      <h5>$${item.material}</h5>
+      <h5>$${item.price}</h5>
         <ion-icon class="removeItem" data-id = ${item.id} name="trash-outline"></ion-icon>
         <div class="stars">
               <ion-icon name="star"></ion-icon>

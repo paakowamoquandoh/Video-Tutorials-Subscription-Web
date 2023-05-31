@@ -6,7 +6,9 @@
     <title>Products | itMustBeGinger</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="./media/icons/nn.png">
-    <!-- Remix icons -->
+    <!-- Remix icons --><link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- Swiper.js styles -->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
@@ -17,7 +19,7 @@
     <!-- Header -->
     <header class="header" id="header">
 
-        <nav class="navbar container">
+        <nav  class="navbar container">
             <a class="logoBox" href="./index.html">
                 <img src="./media/icons/nn.png" alt="">
                 <h2 class="logo">itMustBeGinger</h2>
@@ -26,10 +28,10 @@
             <div class="menu" id="menu">
                 <ul class="list">
                   <li class="list-item">
-                    <a href="./allclasses.html" class="list-link ">Products</a>
+                    <a href="./allclasses.html" class="list-link current">Products</a>
                 </li>
                   <li class="list-item">
-                      <a href="./membership.html" class="list-link current">Education/Academy</a>
+                      <a href="./membership.html" class="list-link ">Education/Academy</a>
                   </li>
 
                   <li class="list-item">
@@ -60,9 +62,9 @@
                   <div class="mobileLogo hide"></div>
                 </span>
                
-                <span onclick="">
+                <span>
                   <div class="cartBox">
-                    <div class="carty">
+                    <div onclick="displayCartOverlay()" class="carty">
                       <ion-icon class="shopIcon" size="large" name="cart-outline"></ion-icon>
                       <div class="cartAmount" id="itemsUpdate">0</div>
                     </div>
@@ -115,95 +117,61 @@
         </div>
       </div>
 
-
-      
-      <div class="background">
-        <div class="classes">
-          <h1>Learning Classes</h1>
-        </div>
-  
-        <div class="payContainer">
-          <div class="panel pricing-table">
+        <!-- cart overlay -->
+    <section id="cartOverlay">
+      <div class="cartOverlay">
+        <div class="cart">
+          <div class="miniCart">
+            <h2>Your Cart</h2>
+            <span class="closeCart">
+              <ion-icon size="large" name="close-circle-outline"></ion-icon>
+            </span>
+          </div>
+          <div class="overlayCartContent">
+            <!-- <div class="cartItem">
             
-            <div class="pricing-plan">
-              <img src="./media/hair/gloria-dolak-pfWgZ1uLSo0-unsplash.jpg" alt="" class="pricing-img">
-              <h2 class="pricing-header">Bridal hairstyling </h2>
-              <ul class="pricing-features">
-                <li class="pricing-features-item">📍beginner or foundation course (a collection of 8 styles)</li>
-                <li class="pricing-features-item">📍advanced course (a collection of 8 styles)</li>
-                <li class="pricing-features-item">📍beginner and advanced merge course <br> (2 in1 course collaboration of beginners and advanced)</li>
-                <li class="pricing-features-item">📍masterclass (8 styles)</li>
-                <li class="pricing-features-item">📍professionals course(8 styles)</li>
-              </ul>
-              <!-- <span class="pricing-price">Ghc 500</span> -->
-              <a href="./contact.html" class="pricing-button">Enroll Now</a>
-            </div>
-
-            <div class="pricing-plan">
-              <img src="./media/hair/enzo-tommasi-62yUsl95gyY-unsplash.jpg" alt="" class="pricing-img">
-              <h2 class="pricing-header">In person / physical classes</h2>
-              <ul class="pricing-features">
-                <li class="pricing-features-item">📍4 in1 WIGMAKING and bridal hairstyling class</li>
-                <li class="pricing-features-item">📍4in1 make up and hair styling 
-                  class </li>
-                <li class="pricing-features-item">📍1 on 1 hairstyling/ Bridalhairstyling/ wig making class </li>
-                <li class="pricing-features-item">📍make up class </li>
-              </ul>
-              <!-- <span class="pricing-price">$400</span> -->
-              <a href="./contact.html" class="pricing-button is-featured">Enroll Now</a>
-            </div>
-            
-            <div class="pricing-plan">
-              <img src="./media/hair/h3.jpg" alt="" class="pricing-img">
-              <h2 class="pricing-header">E learning WIGMAKING</h2>
-              <ul class="pricing-features">
-                <li class="pricing-features-item">E- learning wig styling/representation</li>
-                <li class="pricing-features-item">E- learning frontal installation <br>
-                  <ul >
-                    <li>📍single ponytail</li>
-                    <li>📍 double frontal ponytail</li>
-                    <li>📍Traditional ponytail </li>
-                    <li>📍Single/double frontal updo’s</li>
-                  </ul>
-                   </li>
-              </ul>
-              <!-- <span class="pricing-price">monthly</span> -->
-              <a href="./contact.html" class="pricing-button ">Enroll Now</a>
-            </div>            
+          </div> -->
+          </div>
+          <div class="cartFooter">
+            <h3>Total : Ghc <span class="ItemsTotal">0</span></h3>
+            <button class="cartFooterButton">Clear Cart</button>
+            <button class="checkoutButton">
+              <a href="./checkout.html">Checkout</a>
+            </button>
           </div>
         </div>
       </div>
+    </section>
+    <!-- cartoverlay ends here -->
+
+
+       <!--  -->
 
 
 
-      <!-- Newsletter -->
+     <!-- Newsletter -->
      <section class="newsletter section">
- 
-         <div class="container">
- 
-             <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
- 
-             <div class="form-container-inner">
-                 <h6 class="title newsletter-title">Subscribe</h6>
-                 <p class="newsletter-description">Add your email to recieve newsletters from <i>itMustBeGinger</i></p>
- 
-                 <form action="https://formsubmit.co/itmustbginger@gmail.com" method="POST" class="form">
-                     <input type="email" name="New Subscription" class="form-input" placeholder="Enter your email address">
-                     <input type="hidden" name="_next" value="http://127.0.0.1:5500/public/thanks.html">
-                     <input type="hidden" name="_subject"  value="New Subscriber!">
-                     <input type="hidden" name="_captcha" value="false">
-                     <input type="hidden" name="_autoresponse" value="Thanks for Subscribing">
-                     <button class="btn form-btn" type="submit" onclick="reset();">
-                         <i class="ri-mail-send-line"></i>
-                     </button>
-                 </form>
- 
-             </div>
- 
-         </div>
- 
-     </section>
- 
+
+      <div class="container">
+
+          <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
+
+          <div class="form-container-inner">
+              <h6 class="title newsletter-title">Subscribe</h6>
+              <p class="newsletter-description">Add your email to recieve newsletters from <i>itMustBeGinger</i></p>
+
+              <form action="" class="form">
+                  <input class="form-input" type="text" placeholder="Enter your email address">
+                  <button class="btn form-btn" type="submit">
+                      <i class="ri-mail-send-line"></i>
+                  </button>
+              </form>
+
+          </div>
+
+      </div>
+
+  </section>
 
   <!-- Footer -->
   <footer class="footer section">
@@ -253,27 +221,8 @@
       </div>
     </footer>
 
-    <!-- Swiper.js -->
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-	navigation: {
-		nextEl: ".swiper-next-button",
-		prevEl: ".swiper-prev-button"
-	},
-	effect: "fade",
-	loop: "infinite",
-	pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
-        }
-});
-
-swiper.on('slideChange', function(sld) {
-	document.body.setAttribute('data-sld', sld.realIndex);
-})
-    </script>
     <!-- Custom script -->
+    <script src="./js/products.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/login.js"></script>
 

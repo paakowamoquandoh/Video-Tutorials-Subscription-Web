@@ -1,9 +1,22 @@
+
 .background {
     /* padding: 0 25px 25px; */
-    
+    margin-left: 5px;
     position: relative;
     width: 100%;
     margin-top: 6rem;
+  }
+
+  .classes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .classes h1{
+    color: teal;
+    margin-top: 3rem;
+    margin-bottom: -4rem;
   }
   
   .background::after {
@@ -101,6 +114,8 @@
   .pricing-img {
     margin-bottom: 25px;
     max-width: 100%;
+    border-radius: 50%;
+    height: 15rem;
   }
   
   .pricing-header {
