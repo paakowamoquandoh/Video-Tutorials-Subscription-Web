@@ -8,7 +8,7 @@
   
   .background::after {
     content: '';
-    /* background: var(--other-blue); */
+    background: var(--light-color);
     height: 350px;
     left: 0;
     position: absolute;
@@ -75,10 +75,10 @@
   }
   
   .pricing-plan {
-    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
-    border-bottom: 1px solid #e1f1ff;
+    box-shadow: 0px 10px 13px -6px rgba(77, 77, 77, 0.137), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+    border-bottom: 1px solid #e1f1ff0e;
     padding: 25px;
-    background-color: white;
+    background-color: var(--secondary-background-color);
     margin: 0rem 2rem;
   }
   
@@ -89,7 +89,6 @@
   @media (min-width: 900px) {
     .pricing-plan {
       border-bottom: none;
-      border-right: 1px solid #e1f1ff;
       flex-basis: 100%;
       padding: 25px 50px;
     }
@@ -105,38 +104,38 @@
   }
   
   .pricing-header {
-    color: #888;
+    color: var(--light-color);
     font-weight: 600;
     letter-spacing: 1px;
   }
   
   .pricing-features {
-    color: var(--other-blue);
+    color: var(--light-color-alt);
     font-weight: 600;
     letter-spacing: 1px;
     margin: 50px 0 25px;
   }
   
   .pricing-features-item {
-    border-top: 1px solid #e1f1ff;
+    border-top: 1px solid var(--light-color-alt);
     font-size: 12px;
     line-height: 1.5;
     padding: 15px 0;
   }
   
   .pricing-features-item:last-child {
-    border-bottom: 1px solid #e1f1ff;
+    border-bottom: 1px solid var(--light-color-alt);
   }
   
   .pricing-price {
-    color: #016FF9;
+    color: teal;
     display: block;
     font-size: 32px;
     font-weight: 700;
   }
   
   .pricing-button {
-    border: 1px solid #9dd1ff;
+    border: 1px solid teal;
     border-radius: 10px;
     color: var(--fontColor);
     display: inline-block;
@@ -148,17 +147,18 @@
   
   .pricing-button:hover,
   .pricing-button:focus {
-    background-color: #e1f1ff;
+    background-color: lightseagreen;
   }
   
   .pricing-button.is-featured {
-    background-color: var(--other-blue);
-    color: #fff;
+    background-color: teal;
+    color: var(--light-color-alt);
   }
   
   .pricing-button.is-featured:hover,
   .pricing-button.is-featured:active {
-    background-color: #269aff;
+    background-color: var(--primary-background-color);
+    color: var(--light-color-alt);
   }
 
 
