@@ -761,6 +761,10 @@ body.light-theme {
 }
 
 /* Older posts */
+.homePrice{
+  color: teal;
+  margin-top: 10px;
+}
 .older-posts-grid-wrapper {
   gap: var(--gap);
 }
