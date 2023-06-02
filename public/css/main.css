@@ -1330,7 +1330,7 @@ body.light-theme {
 
 @media (max-device-width: 780px) {
   .sectionOfProducts {
-    margin: none;
+    margin: 0;
     width: 100%;
   }
 }
@@ -1361,33 +1361,33 @@ body.light-theme {
 }
 
 .sectionOfProducts {
-  margin: none;
-  width: 100%;
+
+  margin-top: 11rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section .productsBox .mainProArea {
   justify-content: center;
   margin-top: -20px;
-}
-
-section aside .productsBox {
-  width: 58%;
-  height: auto;
-}
-
-section aside {
-  width: 40%;
+  
 }
 
 section .productsBox {
-  padding: 0;
-  margin: 0;
+  height: auto; 
+  width: 54%;
+}
+
+section aside {  
+  width: 42%;
+  margin-left: 12px;
+  padding-top: 0;
 }
 
 section .productsBox .mainProArea .itemCard {
-  width: 170px;
+  width: 160px;
   margin: 6px 0px;
-  /* padding: 5px 10px; */
+  padding: 5px 0px;
 }
 
 section .productsBox section .sortTitle {
@@ -1523,17 +1523,7 @@ section aside .filterArea .clothesChecked h6 {
 .cartFooterButton {
   margin: 10px 1px;
 }
-section aside {
-  padding-top: 0px;
-  margin-top: -10px;
-  margin-left: 10px;
-}
-section .productsBox section {
-  width: 100%;
-  /* height: 40px; */
-  margin: 0;
-  margin-top: 0spx;
-}
+
 .checkCart {
   width: 80%;
 }
@@ -1550,6 +1540,17 @@ section .productsBox section {
 }
 
 @media (max-device-width: 380px) {
+  section aside .filterArea .itemsCheck li i {
+    font-size: 22px;
+    }
+
+  section .productsBox section .sortTitle h4 {
+   font-size: small;
+    }
+
+    .logoBox h2{
+      display: block;
+    }
   
   #modal .productInfo {
     padding-top: 2rem;
@@ -1624,7 +1625,7 @@ section .productsBox section {
   }
 }
 
-@media (max-device-width: 830px){
+/* @media (max-device-width: 830px){
 
   section aside .productsBox {
     width: 70%;
@@ -1637,6 +1638,6 @@ section .productsBox section {
   section .productsBox .mainProArea .itemCard {
     width: 200px;
     margin: 6px 0px;
-    /* padding: 5px 10px; */
+    padding: 5px 10px;
   }
-}
+} */

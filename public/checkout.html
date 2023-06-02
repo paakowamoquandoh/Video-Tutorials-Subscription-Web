@@ -146,6 +146,58 @@
 
 
        <!--  -->
+       <div class="alertArea">
+        <img src="./img/warning.png" class="errorIcon" alt="" />
+        <p class="errorText">Error message</p>
+      </div>
+  
+      <div class="form">
+        <h2 class="checkoutHeading">checkout</h2>
+        <h4 style="text-transform: capitalize">delivery address</h4>
+        <input type="text" id="address" placeholder="address" />
+        <input type="text" id="street" placeholder="street" />
+        <div class="tripleInput">
+          <input type="text" name="" id="city" placeholder="city" />
+          <input type="text" id="state" placeholder="state" />
+          <input type="text" id="zipcode" placeholder="zip code" />
+        </div>
+        <input type="text" id="landmark" placeholder="land mark" />
+        <span style="color: red; text-align: center" class="error"
+          >this is an error</span
+        ><br /><br />
+      </div>
+  
+      <!--  -->
+  
+      <div class="checkCart">
+        <div class="miniCart">
+          <h2>Your Cart</h2>
+        </div>
+        <div class="cartFooter">
+          <h3>Total : $ <span class="ItemsTotal">0</span></h3>
+  
+          <div class="popBox">
+            <button id="placeOrderBtn" class="checkoutButton">Place Order</button>
+            <div class="popUp" id="popsy">
+              <img src="./img/checked.png" width="150px" height="auto" alt="" />
+              <h2>Thank you</h2>
+              <p>
+                Your Details has been successfully submitted, please contact us
+                for payment and delivery
+              </p>
+              <button onclick="closePopsy()">OK</button>
+              <button>
+                <a href="./aboutus.html" onclick="closePopsy()">Contact us</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="overlayCartContent">
+          <!-- <div class="cartItem">
+              
+            </div> -->
+        </div>
+      </div>
 
 
 

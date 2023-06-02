@@ -7,7 +7,7 @@ const cartArea = document.querySelector(".cart");
 const cartOverlay = document.querySelector(".cartOverlay");
 
 const cartItemsQuantity = document.getElementById("itemsUpdate");
-// const mobileItemsQuantity = document.getElementById("mobileItemsUpdate");
+const mobileItemsQuantity = document.getElementById("mobileItemsUpdate");
 const cartTotal = document.querySelector(".ItemsTotal");
 const overlayCartContent = document.querySelector(".overlayCartContent");
 
@@ -387,14 +387,14 @@ class UI {
     });
   }
 
-  filterProducts(products, sortBy, handle, subtitle) {
+  filterProducts(products, sortBy, category, type) {
     let sortedProducts = [];
-    if (subtitle) {
+    if (type) {
       sortedProducts = products.filter((product) =>
-        product.id.includes(subtitle)
+        product.id.includes(type)
       );
-    } else if (handle) {
-      sortedProducts = products.filter((product) => product.handle === handle);
+    } else if (category) {
+      sortedProducts = products.filter((product) => product.category === category);
     } else {
       sortedProducts = [...products];
     }
@@ -414,32 +414,32 @@ class UI {
         return b.price - a.price;
       });
     } else if (sortBy === "straight") {
-      // filter products by handle (straight only)
-      sortedProducts = products.filter((item) => item.subtitle === "straight");
+      // filter products by category (straight only)
+      sortedProducts = products.filter((item) => item.type === "straight");
     } else if (sortBy === "short") {
       // filter products by handle (short only)
       sortedProducts = products.filter(
-        (item) => item.subtitle === "short"
+        (item) => item.type === "short"
       );
     } else if (sortBy === "curvy") {
       // filter products by handle (curvy only)
-      sortedProducts = products.filter((item) => item.subtitle === "curvy");
+      sortedProducts = products.filter((item) => item.type === "curvy");
     } else if (sortBy === "wavy") {
       // filter products by handle (wavy only)
-      sortedProducts = products.filter((item) => item.subtitle === "wavy");
+      sortedProducts = products.filter((item) => item.type === "wavy");
     } else if (sortBy === "long") {
       // filter products by handle (long only)
-      sortedProducts = products.filter((item) => item.subtitle === "long");
+      sortedProducts = products.filter((item) => item.type === "long");
     } else if (sortBy === "wig") {
       // filter products by handle (wig only)
-      sortedProducts = products.filter((product) => product.handle === "wig");
+      sortedProducts = products.filter((product) => product.category === "wig");
     } else if (sortBy === "extension") {
-      // filter products by handle (woextension only)
-      sortedProducts = products.filter((product) => product.handle === "extension");
+      // filter products by category (woextension only)
+      sortedProducts = products.filter((product) => product.category === "extension");
     } else if (sortBy === "others") {
-      // filter products by handle (women only)
+      // filter products by category (women only)
       sortedProducts = products.filter(
-        (product) => product.handle === "others" || "all"
+        (product) => product.category === "others" || "all"
       );
     }
     this.loadAllproducts(sortedProducts);
@@ -485,7 +485,7 @@ class UI {
     let itemTotal = 0;
     let itemsTotal = 0;
     cartBasket.map((item) => {
-      itemTotal += item.material * item.amount;
+      itemTotal += item.price * item.amount;
       itemsTotal += item.amount;
     });
     cartTotal.innerText = parseFloat(itemTotal.toFixed(2));
