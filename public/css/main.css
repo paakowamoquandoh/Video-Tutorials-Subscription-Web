@@ -1520,6 +1520,17 @@ section aside .filterArea .clothesChecked h6 {
   width: 20px;
 }
 
+.loginPopUp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart {
+  width: 90%;
+}
+
+
 .cartFooterButton {
   margin: 10px 1px;
 }
